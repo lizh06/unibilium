@@ -604,9 +604,9 @@ void unibi_del_ext_num(unibi_term *, size_t);
 void unibi_del_ext_str(unibi_term *, size_t);
 
 
-typedef union {
-    int i;
-    char *p;
+typedef struct {
+    int i_;
+    char *p_;
 } unibi_var_t;
 
 unibi_var_t unibi_var_from_num(int);
